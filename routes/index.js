@@ -28,7 +28,7 @@ router.post("/conversation",  async (req, res, next) => {
 
   try{
     databaseHelper.guardar_registro(jsonObj)
-    res.json(jsonObj.output.generic[0].text)
+    res.json(jsonObj.output)
     next()
   }catch(err){
     res.status(500).json({message: err.message})
