@@ -1,0 +1,9 @@
+---
+applications:
+  - instances: 1
+    name: chatbotfacmedbackend
+    memory: 256M
+    domain: germfy.com
+    host: chatbotfacmedbackend
+    path: .
+    command: npm start
